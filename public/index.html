@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="main" class="is-loading">
+            <h1>
+                丂ㄩ几Ꮆ　ﾌ
+            </h1>
+            <h1>
+                KonoSuba Characters
+            </h1>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#main").removeClass("is-loading");
+            }, 100);
+        });
+
+        boo
+        // var x = true;
+
+        function displayInfo() {
+            document.getElementById("cardContent1").style.display = "block";
+            document.getElementById("cardContent2").style.display = "none";
+            document.getElementById("cardContent3").style.display = "none";
+            document.getElementById("cardContent4").style.display = "none";
+
+        }
+
+        function displayInfo1() {
+            document.getElementById("cardContent1").style.display = "none";
+            document.getElementById("cardContent2").style.display = "block";
+            document.getElementById("cardContent3").style.display = "none";
+            document.getElementById("cardContent4").style.display = "none";
+        }
+
+        function displayInfo2() {
+            document.getElementById("cardContent1").style.display = "none";
+            document.getElementById("cardContent2").style.display = "none";
+            document.getElementById("cardContent3").style.display = "block";
+            document.getElementById("cardContent4").style.display = "none";
+        }
+
+        function displayInfo3() {
+            document.getElementById("cardContent1").style.display = "none";
+            document.getElementById("cardContent2").style.display = "none";
+            document.getElementById("cardContent3").style.display = "none";
+            document.getElementById("cardContent4").style.display = "block";
+        }
+    </script>
+
+
+    <div class=" container ">
+
+        <br><br>
+        <div class="row row-cols-4">
+            <div class="image-box ">
+                <div class="col ">
+
+                    <div class="card ">
+                        <img src="https://images8.alphacoders.com/678/thumb-1920-678753.jpg " onclick="displayInfo()" class="card-img-top " alt="... ">
+                    </div>
+                    <div class="card-body" id="cardContent1" style="display: none;background-color: aliceblue;">
+                        <h5 class="card-title" style="color: black;">Aqua (アクア, Akua)</h5>
+                        <hr style="border: 1px solid green;">
+                        <p class="card-text" style="color: black;">Aqua is the goddess of water who judges humans to send to the RPG world up until Kazuma drags her along with him after she provokes him by mocking his death</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Goddess of Water</small>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box ">
+                <div class="col ">
+
+                    <div class="card ">
+                        <img src="https://images7.alphacoders.com/678/thumb-1920-678774.jpg " onclick="displayInfo1()" class="card-img-top " alt="... ">
+                    </div>
+                    <div class="card-body" id="cardContent2" style="display:none; background-color: aliceblue;">
+                        <h5 class="card-title" style="color: black;">Megumin (めぐみん)</h5>
+                        <hr style="border: 1px solid green;">
+                        <p class="card-text" style="color: black;">Megumin is a 14 year-old archwizard who is part of the Crimson Demons race – modified humans who possess dark brown hair, crimson eyes, powerful magic affinity, and chunibyo characteristics.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Archwizard-Crimson Demon</small>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box ">
+                <div class="col ">
+
+                    <div class="card ">
+                        <img src="https://images3.alphacoders.com/632/thumb-1920-632073.jpg " onclick="displayInfo2()" class="card-img-top " alt="... ">
+                    </div>
+                    <div class="card-body" id="cardContent3" style="display: none;background-color: aliceblue;">
+                        <h5 class="card-title" style="color: black;">Darkness (ダクネス, Dakunesu)</h5>
+                        <hr style="border: 1px solid green;">
+                        <p class="card-text" style="color: black;">Darkness is an 18-year-old crusader who possesses powerful offense and defense but lacks the accuracy to deliver her attacks</p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Crusader masochist </small>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box ">
+                <div class="col ">
+
+                    <div class="card ">
+                        <img src="https://images2.alphacoders.com/798/thumb-1920-798223.png " onclick="displayInfo3()" class="card-img-top " alt="... ">
+                    </div>
+                    <div class="card-body" id="cardContent4" style="display: none;background-color: aliceblue;">
+                        <h5 class="card-title" style="color: black;">Kazuma Sato (佐藤 和真, Satō Kazuma)</h5>
+                        <hr style="border: 1px solid green;">
+                        <p class="card-text" style="color: black;">Kazuma is a 17-year-old game-obsessed shut-in, he is sent to a parallel reality and becomes a role-playing game character</p>
+                    </div>
+                    <div class="card-footer">
+                        <small> Game-Obsessed Shut-In</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
